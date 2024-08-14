@@ -19,3 +19,9 @@ topMenuEl.style.backgroundColor = "var(--top-menu-bg)";
 topMenuEl.classList.add("flex-around");
 
 //Part 3:Adding Menu Buttons
+for (let i = 0; i < menuLinks.length; i++) {
+  const link = document.createElement("a");
+  link.href = menuLinks[i].href;
+  link.textContent = menuLinks[i].text;
+  topMenuEl.appendChild(link);
+}
